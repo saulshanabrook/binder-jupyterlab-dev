@@ -21,7 +21,6 @@ git checkout c91e1ea89c822cd292989a82222aef7a4dcfe1c3
 jlpm
 # link all lumino packages by assming their npm packge name is "@lumino/" prepepended to their folder name
 jlpm link $(ls ../lumino/packages | sed -e 's/^/@lumino\//')
-cd ..
-
-jupyter lab build --dev
+jlpm run build:dev
+jupyter lab build
 cd ../..
