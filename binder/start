@@ -2,4 +2,5 @@
 set -o errexit
 set -o xtrace
 
+# Copy all the args passed into the start command, so that custom tokens and other things will be used.
 exec jupyter lab --dev "${@:3}" 
