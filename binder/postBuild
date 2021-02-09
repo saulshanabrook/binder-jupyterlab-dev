@@ -23,4 +23,5 @@ jlpm
 jlpm link $(ls ../lumino/packages | sed -e 's/^/@lumino\//')
 jlpm run build:dev
 jupyter lab build
+pip install -e .
 cd ../..
